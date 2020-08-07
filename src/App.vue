@@ -1,32 +1,61 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+  <div class="app">
+    <div class="nav">
+      <div class="navbar">
+        <h2 class="titre-site">{{ titreSite }}</h2>
+        <NavBar
+          v-for="item in nav"
+          :url="item.url"
+          :linkName="item.linkName"
+          :key="item.linkName"
+        />
+      </div>
     </div>
-    <router-view/>
+    <Header />
+    <APropos />
+    <MesCompetences />
+    <MonProjet />
+    <MesRealisations />
+    <Contact />
+    <Footer />
   </div>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
 
-#nav {
-  padding: 30px;
+import NavBar from "./components/NavBar"
+import Header from "./components/Header"
+import APropos from "./components/APropos"
+import MesCompetences from "./components/MesCompetences"
+import MonProjet from "./components/MonProjet"
+import MesRealisations from "./components/MesRealisations"
+import Contact from "./components/Contact"
+import Footer from "./components/Footer"
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
+import {mapState} from "vuex"
 
-    &.router-link-exact-active {
-      color: #42b983;
-    }
+export default {
+  name: 'App',
+  components: {
+    NavBar,
+    Header,
+    APropos,
+    MesCompetences,
+    MonProjet,
+    MesRealisations,
+    Contact,
+    Footer
+  },
+  computed: {
+    ...mapState({
+      titreSite: 'titreSite',
+      nav: 'nav'
+    })
   }
 }
+</script>
+
+<style>
+
+
 </style>

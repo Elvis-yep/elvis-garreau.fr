@@ -1,0 +1,187 @@
+* {
+    font-family: fira-sans, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: #ffffff;
+}
+
+.container {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.invers {
+    min-height: 600px;
+    background-color: #fdae10;
+}
+
+
+
+/* header */
+
+
+
+.contenu {
+    min-height: 600px;
+}
+
+/* Titre de pages */
+
+h1, .mon-projet h2, .contact h2 {
+    font-family: korolev-compressed, sans-serif;
+    font-weight: 700;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    color: #5e5e5e;
+    font-size: 35px;
+}
+
+.invers h2 {
+    font-family: korolev-compressed, sans-serif;
+    font-weight: 700;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    color: #5e5e5e;
+    font-size: 35px;
+}
+
+/*
+h1::before, h1::after {
+    content: "-";
+    font-size: 30px;
+    font-weight: 600;
+    color: #cccccc;
+}
+*/
+
+.about {
+    font-weight: 300;
+    text-transform: uppercase;
+    border: solid 1px #fdae10;
+    padding: 12px 15px 5px 12px;
+    margin-left: 10px;
+}
+
+.mine {
+    font-weight: 300;
+    text-transform: uppercase;
+    border: solid 1px #fdae10;
+    padding: 12px 12px 5px 14px;
+    margin-right: 10px;
+}
+
+.invers .about {
+    font-weight: 300;
+    text-transform: uppercase;
+    border: solid 1px #ffffff;
+    padding: 12px 15px 5px 12px;
+    margin-left: 10px;
+}
+
+.invers .mine {
+    font-weight: 300;
+    text-transform: uppercase;
+    border: solid 1px #ffffff;
+    padding: 12px 12px 5px 14px;
+    margin-right: 10px;
+}
+
+/* a propos */
+
+
+/* experience et formation */
+
+hr {
+    border: none;
+    border-bottom: 1px dotted #fdae10;
+    color: #fdae10;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+}
+
+.exp-form {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+.experience {
+    flex: 50%;
+    order: 1;
+}
+
+.formation {
+    flex: 50%;
+    order: 2;
+}
+
+.experience h3, .formation h3 {
+    font-size: 25px;
+    font-family: korolev-condensed, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.experience h3::before {
+    content: url("/images/picto-experience.png");
+    vertical-align: middle;
+    padding-right: 15px;
+}
+
+.formation h3::before {
+    content: url("/images/picto-formation.png");
+    vertical-align: middle;
+    padding-right: 15px;
+}
+
+/* mise en page des experiences */
+
+.mise_en_page {
+    padding-top: 20px;
+}
+
+.date {
+    font-size: 20px;
+    float: right;
+    font-weight: 500;
+    font-style: italic;
+    padding-right: 60px;
+}
+
+.structure {
+    float: left;
+    padding-left: 45px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.poste {
+    clear: both;    
+    font-weight: 500;
+    font-size: 18px;
+    padding-top: 20px;
+    padding-left: 45px;
+    padding-right: 60px;
+}
+
+.descr {
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 23px;
+    padding-top: 10px;
+    padding-left: 45px;
+    padding-right: 60px;
+}
