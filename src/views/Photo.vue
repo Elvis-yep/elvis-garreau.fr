@@ -7,123 +7,23 @@
         <button @click="changeCategorie('divers')">Divers</button>
     </div>
     <div class="galerie-photo corporate" v-show="categorie === 'corporate'">
-        <figure>
-            <a href="images/large/photo-10.jpg" data-lightbox="photo" data-title="Corporate - séance de travail">
-            <img src="images/miniatures/photo-10.jpg" alt="">
-            </a>
-        </figure>
-        <figure>
-            <a href="images/large/photo-11.jpg" data-lightbox="photo" data-title="Corporate - séance de travail">
-            <img src="images/miniatures/photo-11.jpg" alt="Corporate - séance de travail">
-            </a>
-        </figure>
-        <figure>
-            <a href="images/large/photo-12.jpg" data-lightbox="photo" data-title="Corporate - séance de travail">
-            <img src="images/miniatures/photo-12.jpg" alt="Corporate - séance de travail">
+        <figure v-for="item in galerieCorporate" :key="item.url">
+            <a :href="item.url" :data-lightbox="item.lightBox" :data-title="item.alt">
+            <img :src="item.source" :alt="item.alt">
             </a>
         </figure>
     </div>
     <div class="galerie-photo divers" v-show="categorie === 'divers'">
-        <figure>
-            <a href="images/large/photo-16.jpg" data-lightbox="photo" data-title="Salon de coiffure">
-            <img src="images/miniatures/photo-16.jpg" alt="Salon de coiffure">
-            </a>
-        </figure>
-        <figure>
-            <a href="images/large/photo-17.jpg" data-lightbox="photo" data-title="Salon de coiffure">
-            <img src="images/miniatures/photo-17.jpg" alt="Salon de coiffure">
-            </a>
-        </figure>
-        <figure>
-            <a href="images/large/photo-18.jpg" data-lightbox="photo" data-title="Salon de coiffure">
-            <img src="images/miniatures/photo-18.jpg" alt="Salon de coiffure">
-            </a>
-        </figure>      
-        <figure>
-            <a href="images/large/photo-8.jpg" data-lightbox="photo" data-title="Packshot - Montre">
-            <img src="images/miniatures/photo-8.jpg" alt="montre">
-            </a>
-        </figure>
-        <figure>
-            <a href="images/large/photo-9.jpg" data-lightbox="photo" data-title="Packshot - Montre">
-            <img src="images/miniatures/photo-9.jpg" alt="montre">
-            </a>
-        </figure>
-        <figure>
-            <a href="images/large/photo-13.jpg" data-lightbox="photo" data-title="Détails & Lumière">
-            <img src="images/miniatures/photo-13.jpg" alt="Détails & Lumière">
-            </a>
-        </figure>
-        <figure>
-            <a href="images/large/photo-14.jpg" data-lightbox="photo" data-title="Ombre & Lumière">
-            <img src="images/miniatures/photo-14.jpg" alt="Ombre & Lumière">
-            </a>
-        </figure>
-        <figure>
-            <a href="images/large/photo-15.jpg" data-lightbox="photo" data-title="Ombre & Lumière">
-            <img src="images/miniatures/photo-15.jpg" alt="Ombre & Lumière">
-            </a>
-        </figure>
-        <figure>
-            <a href="images/large/photo-19.jpg" data-lightbox="photo" data-title="See the Light">
-            <img src="images/miniatures/photo-19.jpg" alt="See the Light">
-            </a>
-        </figure>
-        <figure>
-            <a href="images/large/photo-23.jpg" data-lightbox="photo" data-title="Portrait sous la neige">
-            <img src="images/miniatures/photo-23.jpg" alt="Portrait sous la neige">
+       <figure v-for="item in galerieDivers" :key="item.url">
+            <a :href="item.url" :data-lightbox="item.lightBox" :data-title="item.alt">
+            <img :src="item.source" :alt="item.alt">
             </a>
         </figure>
     </div>
     <div class="galerie-photo workingArt" v-show="categorie === 'workingArt'">
-        <figure>
-            <a href="images/large/photo-20.jpg" data-lightbox="photo" data-title="The art of Tatoo">
-            <img src="images/miniatures/photo-20.jpg" alt="The art of Tatoo">
-            </a>
-        </figure>
-        <figure>
-            <a href="images/large/photo-21.jpg" data-lightbox="photo" data-title="The art of Tatoo">
-            <img src="images/miniatures/photo-21.jpg" alt="The art of Tatoo">
-            </a>
-        </figure>
-        <figure>
-            <a href="images/large/photo-22.jpg" data-lightbox="photo" data-title="The art of Tatoo">
-            <img src="images/miniatures/photo-22.jpg" alt="The art of Tatoo">
-            </a>
-        </figure>
-        <figure>
-            <a href="images/large/photo-3.jpg" data-lightbox="photo" data-title="grisaille - peinture sur verre">
-            <img src="images/miniatures/photo-3.jpg" alt="grisaille - peinture sur verre">
-            </a>
-        </figure>
-        <figure>
-            <a href="images/large/photo-4.jpg" data-lightbox="photo" data-title="vitraille">
-            <img src="images/miniatures/photo-4.jpg" alt="vitraille">
-            </a>
-        </figure>
-        <figure>
-            <a href="images/large/photo-5.jpg" data-lightbox="photo" data-title="vitraille">
-            <img src="images/miniatures/photo-5.jpg" alt="vitraille">
-            </a>
-        </figure>
-        <figure>
-            <a href="images/large/photo-6.jpg" data-lightbox="photo" data-title="portrait">
-            <img src="images/miniatures/photo-6.jpg" alt="portrait">
-            </a>
-        </figure>
-        <figure>
-            <a href="images/large/photo-7.jpg" data-lightbox="photo" data-title="portrait">
-            <img src="images/miniatures/photo-7.jpg" alt="portrait">
-            </a>
-        </figure>
-        <figure>
-            <a href="images/large/photo-1.jpg" data-lightbox="photo" data-title="StringArt">
-            <img src="images/miniatures/photo-1.jpg" alt="photo de string art">
-            </a>
-        </figure>
-        <figure>
-            <a href="images/large/photo-2.jpg" data-lightbox="photo" data-title="StringArt détails">
-            <img src="images/miniatures/photo-2.jpg" alt="stringart détails">
+        <figure v-for="item in galerieWorkingArt" :key="item.url">
+            <a :href="item.url" :data-lightbox="item.lightBox" :data-title="item.alt">
+            <img :src="item.source" :alt="item.alt">
             </a>
         </figure>
     </div>
@@ -131,17 +31,27 @@
 </template>
 
 <script>
+
+import {mapState} from "vuex"
+
 export default {
     name: "Photo",
     data() {
         return {
             categorie: 'corporate'
-        };
+        }
     },
     methods: {
         changeCategorie(categorie){
-            this.categorie = categorie;
+            this.categorie = categorie
         }
+    },
+    computed: {
+    ...mapState({
+      galerieCorporate: 'galerieCorporate',
+      galerieWorkingArt: 'galerieWorkingArt',
+      galerieDivers: 'galerieDivers'
+    })
     }
 }
 </script>
@@ -162,7 +72,35 @@ export default {
     padding: 30px 0 50px 0;
 }
 
-
+.select-cat button {
+    font-weight: 300;
+    color: #ffffff;
+    outline: 0;
+    border: 0;
+    background-color: #fdae10;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    padding-right: 15px;
+    transition: all 0.4s ease-in-out;
+    &:hover {
+        text-shadow: 0 0 3px rgba($color: #000000, $alpha: 0.8);
+    }
+    &::after {
+        content: ".";
+        padding-left: 15px;
+        font-weight: 500;
+        font-size: 30px;
+        position: relative;
+        top: -4px;
+    }
+    &:last-child {
+        padding-right: 0;
+    }
+    &:last-child::after {
+        content: "";
+    }
+}
 
 .galerie-photo figure {
     width: 33.333333%;

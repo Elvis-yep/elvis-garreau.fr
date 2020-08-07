@@ -11,13 +11,13 @@
         />
       </div>
     </div>
-    <Header />
-    <APropos />
-    <MesCompetences />
-    <MonProjet />
-    <MesRealisations />
-    <Contact />
-    <Footer />
+      <Header />
+      <APropos />
+      <MesCompetences />
+      <MonProjet />
+      <MesRealisations />
+      <Contact />
+      <Footer />
   </div>
 </template>
 
@@ -49,7 +49,8 @@ export default {
   computed: {
     ...mapState({
       titreSite: 'titreSite',
-      nav: 'nav'
+      nav: 'nav',      
+      
     })
   }
 }
@@ -57,5 +58,8 @@ export default {
 
 <style>
 
+html {
+  scroll-behavior: smooth;
+}
 
 </style>
