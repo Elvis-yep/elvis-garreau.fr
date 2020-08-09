@@ -1,16 +1,6 @@
 <template>
   <div class="app">
-    <div class="nav">
-      <div class="navbar">
-        <h2 class="titre-site">{{ titreSite }}</h2>
-        <NavBar
-          v-for="item in nav"
-          :url="item.url"
-          :linkName="item.linkName"
-          :key="item.linkName"
-        />
-      </div>
-    </div>
+      <NavBar/>
       <Header />
       <APropos />
       <MesCompetences />
@@ -32,7 +22,6 @@ import MesRealisations from "./components/MesRealisations"
 import Contact from "./components/Contact"
 import Footer from "./components/Footer"
 
-import {mapState} from "vuex"
 
 export default {
   name: 'App',
@@ -45,13 +34,6 @@ export default {
     MesRealisations,
     Contact,
     Footer
-  },
-  computed: {
-    ...mapState({
-      titreSite: 'titreSite',
-      nav: 'nav',      
-      
-    })
   }
 }
 </script>

@@ -3,7 +3,7 @@
         <div class="container">
             <div class="col">
                 <div class="col1">
-                    <h1>A propos de<span class="about">Moi</span></h1>
+                    <h2>A propos de<span class="about">Moi</span></h2>
                     <p class="description-1">Graphiste freelance depuis 2015, je suis spécialisé dans la création d'identité visuelle, 
                         la photographie et la vidéo (captation, montage et motion design).
                     </p>
@@ -35,7 +35,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 
 .col {
     display: flex;
@@ -56,21 +56,54 @@ export default {
 .back-a-propos {
     background-image: url("/images/a-propos-moi.png");
     background-repeat: no-repeat;
-    background-size: auto 90%;
+    background-size: auto 80%;
     background-position: bottom 0 right 20%;
 }
 
-.col2 img {
-    max-width: 100%;
-    padding-right: 40px;
-    display: flex;
-    margin-right: auto;
-    margin-left: auto;
-    filter: grayscale(100%);
-    vertical-align: middle;
+$breakpoint-tablet: 1280px;
+$breakpoint-mobile: 800px;
+
+
+@media (max-width: $breakpoint-tablet) {
+    .col1 {
+    flex: 50%;
+    order : 1;
+    padding-bottom: 60px;
+    padding-left: 30px;
+    }
+
+    .col2 {
+        flex: 30%;
+        order : 2;
+    }
+    .back-a-propos {
+    background-image: url("/images/a-propos-moi.png");
+    background-repeat: no-repeat;
+    background-size: auto 80%;
+    background-position: bottom 0 right 5%;
+    }
 }
 
-/* description */
+@media (max-width: $breakpoint-mobile) {
+    .col1 {
+    flex: 100%;
+    order : 1;
+    padding-bottom: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+    }
+
+    .col2 {
+        flex: 0;
+        order : 2;
+    }
+    .back-a-propos {
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: auto 80%;
+    background-position: bottom 0 right 5%;
+    }
+}
 
 .description-1 {
     font-weight: 500;
@@ -90,8 +123,6 @@ export default {
     height: 20px;
 }
 
-/* Compétences */
-
 .infos p, .infos a {
     font-size: 18px;
     font-weight: 500;
@@ -100,14 +131,13 @@ export default {
     color: #000000;
 }
 
-
-
 #comp1::before {
     content: url("/images/picto-adresse.png");
     padding-right: 15px;
     vertical-align: middle;
     height: auto;
     float: left;
+    height: 50px;
 }
 
 #comp2::before {

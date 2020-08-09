@@ -3,7 +3,9 @@
     <h3>Voici une selection de différents type de photographie que je réalise</h3>
     <div class="select-cat">
         <button @click="changeCategorie('corporate')">Corporate</button>
+        <button @click="changeCategorie('event')">Event</button>
         <button @click="changeCategorie('workingArt')">Working Art</button>
+        <button @click="changeCategorie('portraits')">Portraits</button>
         <button @click="changeCategorie('divers')">Divers</button>
     </div>
     <div class="galerie-photo corporate" v-show="categorie === 'corporate'">
@@ -22,6 +24,20 @@
     </div>
     <div class="galerie-photo workingArt" v-show="categorie === 'workingArt'">
         <figure v-for="item in galerieWorkingArt" :key="item.url">
+            <a :href="item.url" :data-lightbox="item.lightBox" :data-title="item.alt">
+            <img :src="item.source" :alt="item.alt">
+            </a>
+        </figure>
+    </div>
+    <div class="galerie-photo event" v-show="categorie === 'event'">
+        <figure v-for="item in galerieEvent" :key="item.url">
+            <a :href="item.url" :data-lightbox="item.lightBox" :data-title="item.alt">
+            <img :src="item.source" :alt="item.alt">
+            </a>
+        </figure>
+    </div>
+    <div class="galerie-photo portrait" v-show="categorie === 'portraits'">
+        <figure v-for="item in galeriePortraits" :key="item.url">
             <a :href="item.url" :data-lightbox="item.lightBox" :data-title="item.alt">
             <img :src="item.source" :alt="item.alt">
             </a>
@@ -50,14 +66,16 @@ export default {
     ...mapState({
       galerieCorporate: 'galerieCorporate',
       galerieWorkingArt: 'galerieWorkingArt',
-      galerieDivers: 'galerieDivers'
+      galerieDivers: 'galerieDivers',
+      galeriePortraits: 'galeriePortraits',
+      galerieEvent: 'galerieEvent'
     })
     }
 }
 </script>
 
 <style lang="scss">
-.divers, .corporate, .workingArt {
+.divers, .corporate, .workingArt, .event, .portrait {
     display: flex;    
     flex-wrap: wrap;
     justify-content: left;
@@ -106,6 +124,14 @@ export default {
     width: 33.333333%;
     overflow: hidden;
     place-items: center;
+}
+
+$breakpoint-mobile: 1080px;
+
+@media (max-width: $breakpoint-mobile) {
+    .galerie-photo figure {
+        width: 50%;
+    }
 }
 
 .galerie-photo img {

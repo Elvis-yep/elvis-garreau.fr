@@ -26,18 +26,7 @@ body {
 }
 
 
-
-/* header */
-
-
-
-.contenu {
-    min-height: 600px;
-}
-
-/* Titre de pages */
-
-h1, .mon-projet h2, .contact h2 {
+h2 {
     font-family: korolev-compressed, sans-serif;
     font-weight: 700;
     padding-top: 80px;
@@ -45,24 +34,6 @@ h1, .mon-projet h2, .contact h2 {
     color: #5e5e5e;
     font-size: 35px;
 }
-
-.invers h2 {
-    font-family: korolev-compressed, sans-serif;
-    font-weight: 700;
-    padding-top: 80px;
-    padding-bottom: 50px;
-    color: #5e5e5e;
-    font-size: 35px;
-}
-
-/*
-h1::before, h1::after {
-    content: "-";
-    font-size: 30px;
-    font-weight: 600;
-    color: #cccccc;
-}
-*/
 
 .about {
     font-weight: 300;

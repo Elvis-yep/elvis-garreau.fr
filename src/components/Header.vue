@@ -1,7 +1,7 @@
 <template>
     <header id="accueil">
       <div class="contenu-header">
-          <h2 class="hello">Bonjour, je suis <span>Elvis Garreau</span></h2>
+          <h1 class="hello">Bonjour, je suis <span>Elvis Garreau</span></h1>
           <h2 class="hello2">Je recherche une Alternance en tant que Développeur Web</h2>
       </div>
     </header>
@@ -34,7 +34,7 @@ header {
     font-size: 50px;
     position: absolute;
     right: 10%;
-    top: 270px;
+    top: 290px;
     width: 550px;
 }
 
@@ -56,7 +56,7 @@ header {
     font-size: 25px;
     position: absolute;
     right: 10%;
-    top: 340px;
+    top: 290px;
     width: 550px;
 }
 </style>

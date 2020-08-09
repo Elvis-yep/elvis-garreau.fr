@@ -32,7 +32,10 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
+
+
+
 .back-comp {
     background-image: url("/images/DSC_3313.png");
     background-repeat: no-repeat;
@@ -80,6 +83,40 @@ export default {
     font-size: 17px;
     line-height: 23px;
     color: #333333;
+}
+
+$breakpoint-1: 1500px;
+$breakpoint-2: 1200px;
+
+@media (max-width: $breakpoint-1) {
+    .back-comp {
+        background-size: auto 80%;
+        background-position: bottom 0 left 30px;
+    }
+}
+
+@media (max-width: $breakpoint-2) {
+    .back-comp {
+        background-image: none;
+    }
+
+    .competences h2 {
+        padding-right: 30px;
+    }
+
+    .col-comp-1 {
+        flex: 45%;
+        padding-left: 20px;
+    }
+
+    .col-comp-2 {
+        flex: 45%;
+        padding-right: 20px;
+    }
+
+    .col-comp-3 {
+        flex: 0%;
+    }
 }
 
 #graphic-design::before {

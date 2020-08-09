@@ -34,141 +34,192 @@ export default new Vuex.Store({
     ],
     galerieCorporate: [
       {
-        url: "images/large/photo-10.jpg",
+        url: "images/large/corporate/photo-13.jpg",
         lightBox: "coprorate",
-        source: "images/miniatures/photo-10.jpg",
+        source: "images/miniatures/corporate/photo-13.jpg",
         alt: "Corporate - séance de travail"
       },
       {
-        url: "images/large/photo-11.jpg",
+        url: "images/large/corporate/photo-14.jpg",
         lightBox: "coprorate",
-        source: "images/miniatures/photo-11.jpg",
+        source: "images/miniatures/corporate/photo-14.jpg",
         alt: "Corporate - séance de travail"
       },
       {
-        url: "images/large/photo-12.jpg",
+        url: "images/large/corporate/photo-15.jpg",
         lightBox: "coprorate",
-        source: "images/miniatures/photo-12.jpg",
+        source: "images/miniatures/corporate/photo-15.jpg",
         alt: "Corporate - séance de travail"
+      },
+      {
+        url: "images/large/corporate/photo-16.jpg",
+        lightBox: "coprorate",
+        source: "images/miniatures/corporate/photo-16.jpg",
+        alt: "Corporate - séance de travail"
+      },
+      {
+        url: "images/large/corporate/photo-46.jpg",
+        lightBox: "coprorate",
+        source: "images/miniatures/corporate/photo-46.jpg",
+        alt: "Corporate - séance de travail"
+      },
+      {
+        url: "images/large/corporate/photo-47.jpg",
+        lightBox: "coprorate",
+        source: "images/miniatures/corporate/photo-47.jpg",
+        alt: "Corporate - séance de travail"
+      }
+    ],
+    galerieEvent: [
+      {
+        url: "images/large/event/photo-34.jpg",
+        lightBox: "event",
+        source: "images/miniatures/event/photo-34.jpg",
+        alt: "Event - weforge"
+      },
+      {
+        url: "images/large/event/photo-48.jpg",
+        lightBox: "event",
+        source: "images/miniatures/event/photo-48.jpg",
+        alt: "Event SWAngers"
+      },
+      {
+        url: "images/large/event/photo-49.jpg",
+        lightBox: "event",
+        source: "images/miniatures/event/photo-49.jpg",
+        alt: "Event SWAngers"
+      },{
+        url: "images/large/event/photo-50.jpg",
+        lightBox: "event",
+        source: "images/miniatures/event/photo-50.jpg",
+        alt: "Event SWAngers"
+      },
+      {
+        url: "images/large/event/photo-51.jpg",
+        lightBox: "event",
+        source: "images/miniatures/event/photo-51.jpg",
+        alt: "Event SWAngers"
+      },
+      {
+        url: "images/large/event/photo-52.jpg",
+        lightBox: "event",
+        source: "images/miniatures/event/photo-52.jpg",
+        alt: "Event SWAngers"
       }
     ],
     galerieWorkingArt: [
       {
-        url: "images/large/photo-20.jpg",
+        url: "images/large/workingArt/photo-2.jpg",
         lightBox: "workingArt",
-        source: "images/miniatures/photo-20.jpg",
-        alt: "The art of Tatoo"
-      },
-      {
-        url: "images/large/photo-21.jpg",
-        lightBox: "workingArt",
-        source: "images/miniatures/photo-21.jpg",
-        alt: "The art of Tatoo"
-      },
-      {
-        url: "images/large/photo-22.jpg",
-        lightBox: "workingArt",
-        source: "images/miniatures/photo-22.jpg",
-        alt: "The art of Tatoo"
-      },
-      {
-        url: "images/large/photo-3.jpg",
-        lightBox: "workingArt",
-        source: "images/miniatures/photo-3.jpg",
-        alt: "The art of Stained Glass"
-      },
-      {
-        url: "images/large/photo-4.jpg",
-        lightBox: "workingArt",
-        source: "images/miniatures/photo-4.jpg",
-        alt: "The art of Stained Glass"
-      },
-      {
-        url: "images/large/photo-5.jpg",
-        lightBox: "workingArt",
-        source: "images/miniatures/photo-5.jpg",
-        alt: "The art of Stained Glass"
-      },
-      {
-        url: "images/large/photo-7.jpg",
-        lightBox: "workingArt",
-        source: "images/miniatures/photo-7.jpg",
-        alt: "The art of Stained Glass"
-      },
-      {
-        url: "images/large/photo-1.jpg",
-        lightBox: "workingArt",
-        source: "images/miniatures/photo-1.jpg",
+        source: "images/miniatures/workingArt/photo-2.jpg",
         alt: "The art of StringArt"
       },
       {
-        url: "images/large/photo-2.jpg",
+        url: "images/large/workingArt/photo-3.jpg",
         lightBox: "workingArt",
-        source: "images/miniatures/photo-2.jpg",
+        source: "images/miniatures/workingArt/photo-3.jpg",
         alt: "The art of StringArt"
+      },
+      {
+        url: "images/large/workingArt/photo-4.jpg",
+        lightBox: "workingArt",
+        source: "images/miniatures/workingArt/photo-4.jpg",
+        alt: "The art of Stained Glass"
+      },
+      {
+        url: "images/large/workingArt/photo-6.jpg",
+        lightBox: "workingArt",
+        source: "images/miniatures/workingArt/photo-6.jpg",
+        alt: "The art of Stained Glass"
+      },
+      {
+        url: "images/large/workingArt/photo-41.jpg",
+        lightBox: "workingArt",
+        source: "images/miniatures/workingArt/photo-41.jpg",
+        alt: "The art of Tatoo"
+      },
+      {
+        url: "images/large/workingArt/photo-45.jpg",
+        lightBox: "workingArt",
+        source: "images/miniatures/workingArt/photo-45.jpg",
+        alt: "The art of Tatoo"
+      }
+    ],
+    galeriePortraits: [
+      {
+        url: "images/large/portraits/photo-5.jpg",
+        lightBox: "portraits",
+        source: "images/miniatures/portraits/photo-5.jpg",
+        alt: "Portrait Mickael"
+      },
+      {
+        url: "images/large/portraits/photo-9.jpg",
+        lightBox: "portraits",
+        source: "images/miniatures/portraits/photo-9.jpg",
+        alt: "Portrait Sébastien"
+      },
+      {
+        url: "images/large/portraits/photo-12.jpg",
+        lightBox: "portraits",
+        source: "images/miniatures/portraits/photo-12.jpg",
+        alt: "Portrait Emma"
+      },
+      {
+        url: "images/large/portraits/photo-22.jpg",
+        lightBox: "portraits",
+        source: "images/miniatures/portraits/photo-22.jpg",
+        alt: "Portrait Manon"
+      },
+      {
+        url: "images/large/portraits/photo-23.jpg",
+        lightBox: "portraits",
+        source: "images/miniatures/portraits/photo-23.jpg",
+        alt: "Portrait Yohan"
+      },
+      {
+        url: "images/large/portraits/photo-53.jpg",
+        lightBox: "portraits",
+        source: "images/miniatures/portraits/photo-53.jpg",
+        alt: "Portrait Marine"
       }
     ],
     galerieDivers: [
       {
-        url: "images/large/photo-16.jpg",
+        url: "images/large/divers/photo-10.jpg",
         lightBox: "divers",
-        source: "images/miniatures/photo-16.jpg",
-        alt: "salon de coiffure"
-      },
-      {
-        url: "images/large/photo-17.jpg",
-        lightBox: "divers",
-        source: "images/miniatures/photo-17.jpg",
-        alt: "salon de coiffure"
-      },
-      {
-        url: "images/large/photo-18.jpg",
-        lightBox: "divers",
-        source: "images/miniatures/photo-18.jpg",
-        alt: "salon de coiffure"
-      },
-      {
-        url: "images/large/photo-8.jpg",
-        lightBox: "divers",
-        source: "images/miniatures/photo-8.jpg",
+        source: "images/miniatures/divers/photo-10.jpg",
         alt: "montre"
       },
       {
-        url: "images/large/photo-9.jpg",
+        url: "images/large/divers/photo-11.jpg",
         lightBox: "divers",
-        source: "images/miniatures/photo-9.jpg",
+        source: "images/miniatures/divers/photo-11.jpg",
         alt: "montre"
       },
       {
-        url: "images/large/photo-13.jpg",
+        url: "images/large/divers/photo-18.jpg",
         lightBox: "divers",
-        source: "images/miniatures/photo-13.jpg",
-        alt: "lumières"
+        source: "images/miniatures/divers/photo-18.jpg",
+        alt: "livre ouvert"
       },
       {
-        url: "images/large/photo-14.jpg",
+        url: "images/large/divers/photo-19.jpg",
         lightBox: "divers",
-        source: "images/miniatures/photo-14.jpg",
-        alt: "salon de coiffure"
+        source: "images/miniatures/divers/photo-19.jpg",
+        alt: "déco"
       },
       {
-        url: "images/large/photo-15.jpg",
+        url: "images/large/divers/photo-38.jpg",
         lightBox: "divers",
-        source: "images/miniatures/photo-15.jpg",
-        alt: "montre"
+        source: "images/miniatures/divers/photo-38.jpg",
+        alt: "Lights"
       },
       {
-        url: "images/large/photo-19.jpg",
+        url: "images/large/divers/photo-42.jpg",
         lightBox: "divers",
-        source: "images/miniatures/photo-19.jpg",
-        alt: "lumières"
+        source: "images/miniatures/divers/photo-42.jpg",
+        alt: "outils du tatoueur"
       },
-      {
-        url: "images/large/photo-23.jpg",
-        lightBox: "divers",
-        source: "images/miniatures/photo-23.jpg",
-        alt: "salon de coiffure"
-      }
     ]
   },
   getters: {

@@ -1,26 +1,47 @@
-<template>    
-  <ul class="navbar-list">
-    <li class="nav-item"><a class="nav-link" :href="url">{{ linkName }}</a></li>
-  </ul>
+<template>   
+  <div class="nav">
+    <div class="navbar">
+      <h3 class="titre-site">{{ titreSite }}</h3>
+      <ul class="navbar-list" v-for="item in nav" :key="item.linkName">
+        <li class="nav-item"><a class="nav-link" :href="item.url">{{ item.linkName }}</a></li>
+      </ul>
+      <div class="burger-menu">
+        <button class="burger-button" @click="changeVisibility('visible')"><img src="/images/burger-menu.png" alt="burger menu"></button>
+          <ul class="burger-list" v-for="item in nav" :key="item.linkName" v-show="menuVisible === 'visible'">
+            <li class="burger-item"><a @click="changeVisibility('nonVisible')" class="burger-link" :href="item.url">{{ item.linkName }}</a></li>
+          </ul>
+      </div>
+    </div>
+  </div>
+  
 </template>
 
 <script>
+
+import {mapState} from "vuex"
+
 export default {
     name: "NavBar",
-    props: {
-      url: {
-        type: String,
-        required: true
-      },
-      linkName: {
-        type: String,
-        required: true
+    data() {
+      return {
+        menuVisible: 'nonVisible'
+      }
+    },
+    computed: {
+      ...mapState({
+        titreSite: 'titreSite',
+        nav: 'nav',      
+    })
+    },
+    methods: {
+      changeVisibility(menuVisible) {
+        this.menuVisible = menuVisible
       }
     }
 }
 </script>
     
-<style>
+<style lang="scss">
 
 .navbar {
     position: fixed;
@@ -32,8 +53,7 @@ export default {
 }
 
 .titre-site{
-  float: left;
-  justify-content: flex-start;
+    float: left;
     font-family: zooja-pro,sans-serif;
     font-weight: 300;
     padding-left: 40px;
@@ -45,16 +65,59 @@ export default {
   float: right;
 }
 
-/*
-.nav-item {
-    display: table-cell;
-    padding-right: 50px;
-    color: #fdae10;
-    font-weight: 300;
-    font-size: 17px;
-    float: left;
+
+
+.burger-menu {
+  display: none;
+  float: right;
+  text-align: right;
+  padding-right: 40px;
 }
-*/
+
+$breakpoint-mobile: 1080px;
+
+@media (max-width: $breakpoint-mobile) {
+  .burger-menu{
+    display: block;
+  }
+
+  .navbar-list {
+    display: none;
+  }
+  
+}
+.burger-button {
+  border: 0;
+  outline: 0;
+  background-color: rgba($color: #000000, $alpha: 0);
+  height: 50px;
+  width: 40px;
+  cursor: pointer;
+}
+
+.burger-button img {
+  height: 100%;
+  width: 100%;
+}
+
+.burger-list {
+  display: flex;
+  top: 0;
+  flex-direction: column-reverse;
+  background-color: rgba(0, 0, 0, .6);
+  padding: 0 15px;
+}
+
+.burger-item {
+  display: flex;
+  list-style: none;
+}
+
+.burger-link {
+  display: flex;
+  text-decoration: none;
+  color: #ffffff;
+}
 
 .nav-item {
     display: table-cell;
