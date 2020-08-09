@@ -31,12 +31,12 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 .back-contact {
     background-image: url("/images/moi-contact.png");
     background-repeat: no-repeat;
     background-size: auto 80%;
-    background-position: bottom 0 left 10%;
+    background-position: bottom 0 left 5%;
 }
 
 .col1-contact {
@@ -49,8 +49,37 @@ export default {
     order: 2;
 }
 
-.contact {
-    min-height: 600px;
+.contact p {
+    font-weight: 300;
+    font-size: 18px;
+    padding-bottom: 50px;
+    text-align: left;
+    line-height: 25px;
+    span {
+        font-weight: 500;
+        font-style: italic;
+    };
+    span a {
+        color: #333333;
+        font-weight: 500;
+        font-style: italic;
+    }
+}
+
+$breakpoint-1: 1170px;
+
+@media (max-width: $breakpoint-1) {
+    .back-contact{        
+        background-size: auto 70%;
+    }
+
+    .col1-contact {
+        flex: 30%;
+    }
+
+    .col2-contact {
+        padding-right: 30px;
+    }
 }
 
 .formulaire {
@@ -74,24 +103,29 @@ textarea {
     margin-bottom: 5px;
     resize: none;
 	padding-left: 5px;
-	background: #ffffff;
+	background: rgba(255, 255, 255, 0.8);
     border-left: 6px solid #fdae10;
     border-bottom: 1px solid #fdae10;
     border-right: 0;
     border-top: 0;
-}
-
-textarea:focus {
-	outline: 0;
+    &:focus {
+        outline: 0;
+    };
+    &::placeholder {
+        font-size: 30px;
+        font-family: fira-sans, sans-serif;
+        font-weight: 500;
+        font-style: italic;
+    };
 }
 
 input {
 	width: 100%;
-	height: 80px;
+	height: 60px;
 	margin-top: 10px;
 	margin-bottom: 15px;
 	padding-left: 5px;
-	background: #ffffff;
+	background: rgba(255, 255, 255, 0.8);
     border-left: 6px solid #fdae10;
     border-bottom: 1px solid #fdae10;
     border-right: 0;
@@ -101,18 +135,9 @@ input {
     font-weight: 500;
     font-style: italic;
     color: #333333;
-}
-
-textarea::placeholder {
-    font-size: 30px;
-    font-family: fira-sans, sans-serif;
-    font-weight: 500;
-    font-style: italic;
-
-}
-
-input:focus {
-	outline: 0;
+    &:focus {
+        outline: 0;
+    };
 }
 
 .sendButton {
@@ -120,10 +145,17 @@ input:focus {
 	height: 30px;
 	background: #fdae10;
 	color: #ffffff;
-	border:1px solid #ffffff;
-}
-
-.sendButton:hover {
-	background: #f2a100;
+    border:1px solid #ffffff;
+    font-weight: 300;
+    padding: 0;
+    font-size: 20px;
+    font-style: normal;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    &:hover {
+        background: #f2a100;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    };
 }
 </style>

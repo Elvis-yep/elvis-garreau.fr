@@ -9,7 +9,7 @@
                     <h3 id="web-design">Web design</h3>
                     <p>Réalisation de maquettes de sites web responsives via les logiciels Adobe Photoshop et XD</p>
                     <h3 id="dev-front">développement front</h3>
-                    <p>Connaissance des langages HTML, CSS, PHP et JavaScript, je fais de l'intégration web.</p>
+                    <p>Connaissance des langages HTML, CSS, PHP et JavaScript, j'ai développé ce site avec Vue.js.</p>
                 </div>
                 <div class="col-comp-2">
                     <h3 id="photo">Photographie</h3>
