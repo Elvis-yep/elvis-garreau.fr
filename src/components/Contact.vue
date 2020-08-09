@@ -12,7 +12,7 @@
                 </p>
                 <div class="formulaire">
                     <form name="form1" id="formulairedecontact" method="post" action="envoi.php">
-                        <input type="text" placeholder="Nom et Prénom" name="nom-prenom" id="nom-prenom" required> 
+                        <input type="text" placeholder="Nom et Prénom" name="nom" id="nom" required> 
                         <input type="text" placeholder="Entreprise" name="entreprise" id="entreprise" required>
                         <input type="email" placeholder="E-mail" name="email" id="email" required>
                         <textarea type="text" placeholder="Ecrivez votre message" name="message" id="message" rows="10" cols="50" required></textarea>
@@ -112,7 +112,7 @@ textarea {
         outline: 0;
     };
     &::placeholder {
-        font-size: 30px;
+        font-size: 25px;
         font-family: fira-sans, sans-serif;
         font-weight: 500;
         font-style: italic;
@@ -121,7 +121,7 @@ textarea {
 
 input {
 	width: 100%;
-	height: 60px;
+	height: 50px;
 	margin-top: 10px;
 	margin-bottom: 15px;
 	padding-left: 5px;
@@ -130,7 +130,7 @@ input {
     border-bottom: 1px solid #fdae10;
     border-right: 0;
     border-top: 0;
-    font-size: 30px;
+    font-size: 25px;
     font-family: fira-sans, sans-serif;
     font-weight: 500;
     font-style: italic;
@@ -153,6 +153,7 @@ input {
     line-height: 30px;
     outline: 0;
     border: 0;
+    cursor: pointer;
     &:hover {
         background: #f2a100;
         box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
