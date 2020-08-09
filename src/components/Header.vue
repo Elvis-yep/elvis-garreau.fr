@@ -13,7 +13,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="scss">
 header {
     background-image: url("/images/header-2.jpg");
     background-position: center;
@@ -29,16 +29,14 @@ header {
 .hello {
     font-family: korolev-condensed, sans-serif;
     font-weight: 700;
-    text-align: left;
+    text-align: right;
     color: #ffffff;
     font-size: 50px;
     position: absolute;
     right: 10%;
     top: 290px;
     width: 550px;
-}
-
-.hello span {
+    span {
     font-family: zooja-pro,sans-serif;
     font-weight: 300;
     border: solid 1px #fdae10;
@@ -46,12 +44,13 @@ header {
     padding: 11px 20px 3px 13px;
     margin-left: 10px;
     font-size: 60px;
+    }
 }
 
 .hello2 {    
     font-family: korolev-condensed, sans-serif;
     font-weight: 300;
-    text-align: left;
+    text-align: right;
     color: #ffffff;
     font-size: 25px;
     position: absolute;
@@ -59,4 +58,13 @@ header {
     top: 290px;
     width: 550px;
 }
+
+$breakpoint-1: 1170px;
+ @media (max-width: $breakpoint-1) {
+     .hello, .hello2 {
+        right: 30px;
+     }
+ }
+
+
 </style>

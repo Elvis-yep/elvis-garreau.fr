@@ -110,6 +110,7 @@ $breakpoint-mobile: 800px;
     font-size: 18px;
     padding-bottom: 20px;
     text-align: left;
+    line-height: 24px;
 }
 
 .description {
@@ -117,6 +118,7 @@ $breakpoint-mobile: 800px;
     font-size: 18px;
     padding-bottom: 50px;
     text-align: left;
+    line-height: 24px;
 }
 
 .description br {
