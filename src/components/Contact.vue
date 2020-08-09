@@ -16,7 +16,6 @@
                         <input type="text" placeholder="Entreprise" name="entreprise" id="entreprise" required>
                         <input type="email" placeholder="E-mail" name="email" id="email" required>
                         <textarea type="text" placeholder="Ecrivez votre message" name="message" id="message" rows="10" cols="50" required></textarea>
-                        <input type="hidden" id="recaptcha-token" name="token" />
                         <input class="sendButton" type="submit" name="envoi" value="Envoyer">
                     </form>
                 </div>
