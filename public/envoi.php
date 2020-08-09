@@ -4,7 +4,7 @@
 $token = htmlentities($_POST["token"]);
 
 if (!recaptcha($token)) {
-    header("Location: /contact.html?fail");
+    header("Location: /index.html?fail");
 }
 
 $nom = htmlentities($_POST['nom']);
@@ -14,8 +14,9 @@ $message = htmlentities($_POST['message']);
  
 $to = "alternance@elvis-garreau.fr";
 $subject = "Formulaire site Alternance";
-$message = " Nom: " . $nom . "\r\n\r\n Entreprise: " . $entreprise . "\r\n\r\n Email: " . $email . "\r\n\r\n Objet: " . $objet . "\r\n\r\n Message:\r\n" . $message;
- 
+$message = " Nom: " . $nom . "\r\n\r\n Entreprise: " . $entreprise . "\r\n\r\n Email: " . $email . "\r\n\r\n Message:\r\n" . $message;
+$message .= "Content-type: text/plain; charset=UTF-8" . "\r\n"; 
+
 $from = "$email";
 $headers = "From:" . $from . "\r\n";
 $headers .= "Content-type: text/plain; charset=UTF-8" . "\r\n"; 
@@ -23,7 +24,7 @@ $headers .= "Content-type: text/plain; charset=UTF-8" . "\r\n";
 if($email!="" && $nom!="" && $entreprise!="" && $message!="")
 {
     mail($to,$subject,$message,$headers);
-    header("Location: /merci.html?success");
+    header("Location: /index.html?success");
 }else{
   echo "Erreur! Veuillez Remplir les Champs Requis.";
 }
