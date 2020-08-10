@@ -9,14 +9,24 @@
                 N'hésitez pas à me contacter via ce formulaire.<br>
                 Vous pouvez aussi me contacter par téléphone au : <span>07 56 80 24 75</span><br>
                 Ou via cette adresse mail : <span><a href="mailto: alternance@elvis-garreau.fr">alternance@elvis-garreau.fr</a></span>
-                </p>
+                </p>                
                 <div class="formulaire">
                     <form name="form1" id="formulairedecontact" method="post" action="envoi.php">
-                        <input type="text" placeholder="Nom et Prénom" name="nom" id="nom" required> 
-                        <input type="text" placeholder="Entreprise" name="entreprise" id="entreprise" required>
-                        <input type="email" placeholder="E-mail" name="email" id="email" required>
-                        <textarea type="text" placeholder="Ecrivez votre message" name="message" id="message" rows="10" cols="50" required></textarea>
-                        <input class="sendButton" type="submit" name="envoi" value="Envoyer">
+                        <label for="nom">
+                            <input type="text" placeholder="Nom et Prénom" name="nom" id="nom" required>
+                        </label>
+                        <label for="entreprise">
+                            <input type="text" placeholder="Entreprise" name="entreprise" id="entreprise" required>
+                        </label>
+                        <label for="email">
+                            <input type="email" placeholder="E-mail" name="email" id="email" required>
+                        </label>
+                        <label for="message">
+                            <textarea type="text" placeholder="Ecrivez votre message" name="message" id="message" rows="5" cols="50" required></textarea>
+                        </label>
+                        <vue-recaptcha sitekey="6LcvBr0ZAAAAAN3FBJ6h124EyPUkNxhqwUX6CpvQ">
+                        <button class="sendButton">Envoyer</button>
+                        </vue-recaptcha>
                     </form>
                 </div>
             </div>
@@ -25,9 +35,14 @@
 </template>
 
 <script>
+
+import VueRecaptcha from 'vue-recaptcha';
+
 export default {
-    name: "Contact"
+    name: "Contact",
+    components: { VueRecaptcha }
 }
+
 </script>
 
 <style lang="scss">
@@ -107,14 +122,12 @@ textarea {
     border-bottom: 1px solid #fdae10;
     border-right: 0;
     border-top: 0;
+    font-size: 25px;
+    font-family: fira-sans, sans-serif;
+    font-weight: 500;
+    font-style: italic;
     &:focus {
         outline: 0;
-    };
-    &::placeholder {
-        font-size: 25px;
-        font-family: fira-sans, sans-serif;
-        font-weight: 500;
-        font-style: italic;
     };
 }
 
