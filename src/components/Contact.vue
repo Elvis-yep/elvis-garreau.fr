@@ -11,6 +11,7 @@
                 Ou via cette adresse mail : <span><a href="mailto: alternance@elvis-garreau.fr">alternance@elvis-garreau.fr</a></span>
                 </p>                
                 <div class="formulaire">
+                    <vue-recaptcha sitekey="6LcvBr0ZAAAAAN3FBJ6h124EyPUkNxhqwUX6CpvQ">
                     <form name="form1" id="formulairedecontact" method="post" action="envoi.php">
                         <label for="nom">
                             <input type="text" placeholder="Nom et Prénom" name="nom" id="nom" required>
@@ -24,10 +25,9 @@
                         <label for="message">
                             <textarea type="text" placeholder="Ecrivez votre message" name="message" id="message" rows="5" cols="50" required></textarea>
                         </label>
-                        <vue-recaptcha sitekey="6LcvBr0ZAAAAAN3FBJ6h124EyPUkNxhqwUX6CpvQ">
                         <button class="sendButton">Envoyer</button>
-                        </vue-recaptcha>
                     </form>
+                    </vue-recaptcha>
                 </div>
             </div>
         </div>
