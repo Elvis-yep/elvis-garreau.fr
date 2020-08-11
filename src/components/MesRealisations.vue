@@ -3,8 +3,8 @@
         <div class="portfolio" id="mes-realisations">
             <h2><span class="mine">Mes</span>Réalisations</h2>
             <div class="select-cat">
-                <router-link to="/">Photo</router-link>
-                <router-link to="/graphicDesign">Graphic Design</router-link>
+                <router-link to="/">Design</router-link>
+                <router-link to="/Photo">Photo</router-link>
                 <router-link to="/video">Vidéo</router-link>
             </div>
             <router-view />

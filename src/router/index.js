@@ -9,12 +9,12 @@ Vue.use(VueRouter)
 
   const routes = [
   {
-    path: '/',
+    path: '/Photo',
     name: 'Photo',
     component: Photo
   },
   {
-    path: '/graphicDesign',
+    path: '/',
     name: 'graphicDesign',
     component: graphicDesign
   },

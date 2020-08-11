@@ -3,7 +3,7 @@
         <div class="soc">
             <h3>Trouvez-moi sur les réseaux sociaux</h3>
             <div class="ul-content">
-                <ul>                    
+                <ul><li><a href="https://www.linkedin.com/in/elvis-garreau/" class="picto-soc" target="_blank" title="LinkedIn"><img src="/images/picto-linkedin.svg" alt="logo LinkedIn"></a></li>                    
                     <li><a href="https://www.instagram.com/theyepstudio/" class="picto-soc" target="_blank" title="Instagram"><img src="/images/picto-insta.svg" alt="logo Instagram"></a></li>
                     <li><a href="https://fr.pinterest.com/elvis_garreau/mes-r%C3%A9alisations/" target="_blank" title="Pinterest"><img src="/images/picto-pinterest.svg" alt="logo pinterest"></a></li>
                     <li><a href="https://www.behance.net/Elvis-Garreau" class="picto-soc" target="_blank" title="Behance"><img src="/images/picto-behance.svg" alt="logo behance"></a></li>

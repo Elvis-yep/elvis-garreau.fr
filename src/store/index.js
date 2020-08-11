@@ -219,7 +219,83 @@ export default new Vuex.Store({
         lightBox: "divers",
         source: "images/miniatures/divers/photo-42.jpg",
         alt: "outils du tatoueur"
+      }
+    ],
+    galerieLogo: [
+      {
+        url: "images/large/logos/logo1-elephant.jpg",
+        lightBox: "divers",
+        source: "images/miniatures/logos/logo1-elephant.jpg",
+        alt: "Logo - Elephant"
       },
+      {
+        url: "images/large/logos/logo-biotronic.jpg",
+        lightBox: "divers",
+        source: "images/miniatures/logos/logo-biotronic.jpg",
+        alt: "Logo - Biotronic"
+      },
+      {
+        url: "images/large/logos/logo-deltaequitation.jpg",
+        lightBox: "divers",
+        source: "images/miniatures/logos/logo-deltaequitation.jpg",
+        alt: "Logo - Delta Equiation"
+      },
+      {
+        url: "images/large/logos/logo-dreamworld.jpg",
+        lightBox: "divers",
+        source: "images/miniatures/logos/logo-dreamworld.jpg",
+        alt: "Logo - DreamWorld"
+      },
+      {
+        url: "images/large/logos/logo-mc2play.jpg",
+        lightBox: "divers",
+        source: "images/miniatures/logos/logo-mc2play.jpg",
+        alt: "Logo - MC2Play"
+      },
+      {
+        url: "images/large/logos/logo-paneuropae.jpg",
+        lightBox: "divers",
+        source: "images/miniatures/logos/logo-paneuropae.jpg",
+        alt: "Logo - Paneuropae"
+      }
+    ],
+    galeriePrint: [
+      {
+        url: "images/large/print/chemise-paneuropae.jpg",
+        lightBox: "divers",
+        source: "images/miniatures/print/chemise-paneuropae.jpg",
+        alt: "Chemise à rabat"
+      },
+      {
+        url: "images/large/print/cv-elephant.jpg",
+        lightBox: "divers",
+        source: "images/miniatures/print/cv-elephant.jpg",
+        alt: "Carte de visite"
+      },
+      {
+        url: "images/large/print/cv-paneuropae.jpg",
+        lightBox: "divers",
+        source: "images/miniatures/print/cv-paneuropae.jpg",
+        alt: "Carte de visite"
+      },
+      {
+        url: "images/large/print/dep-songstudio.jpg",
+        lightBox: "divers",
+        source: "images/miniatures/print/dep-songstudio.jpg",
+        alt: "Dépliant"
+      },
+      {
+        url: "images/large/print/idv-elephant.jpg",
+        lightBox: "divers",
+        source: "images/miniatures/print/idv-elephant.jpg",
+        alt: "Identité visuelle"
+      },
+      {
+        url: "images/large/print/idv-paneuropae.jpg",
+        lightBox: "divers",
+        source: "images/miniatures/print/idv-paneuropae.jpg",
+        alt: "Identité visuelle"
+      }
     ]
   },
   getters: {
