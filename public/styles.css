@@ -67,6 +67,34 @@ h2 {
     margin-right: 10px;
 }
 
+.merci {
+    margin-top: 15%;
+    margin-bottom: 10%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #fdae10;
+}
+
+.merci h2{
+    text-align: center;
+    padding-top: 0;
+}
+
+.merci p {
+    text-align: center;
+}
+
+.merci p a {
+    color: #ffffff;
+    padding: 10px 20px;
+    background-color: #5e5e5e;
+    transition: all 0.4s ease-in-out;
+}
+
+.merci p a:hover {
+    box-shadow: 3px 3px 10px rgba(0, 0 , 0, 0.6);
+}
+
 /* a propos */
 
 
