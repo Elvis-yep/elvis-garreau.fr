@@ -87,6 +87,7 @@ export default {
 
 $breakpoint-1: 1500px;
 $breakpoint-2: 1200px;
+$breakpoint-mobile: 900px;
 
 @media (max-width: $breakpoint-1) {
     .back-comp {
@@ -112,6 +113,31 @@ $breakpoint-2: 1200px;
     .col-comp-2 {
         flex: 45%;
         padding-right: 20px;
+    }
+
+    .col-comp-3 {
+        flex: 0%;
+    }
+}
+
+@media (max-width: $breakpoint-mobile) {
+    .back-comp {
+        background-image: none;
+    }
+
+    .competences h2 {
+        padding-left: 30px;
+        text-align: center;
+    }
+
+    .col-comp-1 {
+        flex: 100%;
+        padding: 0 30px;
+    }
+
+    .col-comp-2 {
+        flex: 100%;
+        padding: 0 20px;
     }
 
     .col-comp-3 {

@@ -36,7 +36,7 @@ export default {
 
 .select-cat a {
     font-weight: 300;
-    color: #ffffff;
+    color: #333333;
     font-size: 20px;
     text-transform: uppercase;
     text-decoration: none;
@@ -71,4 +71,7 @@ export default {
 .portfolio button:focus {
     outline: 0;
 }
+
+
+
 </style>

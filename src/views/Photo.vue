@@ -85,14 +85,22 @@ export default {
 .pfPhoto h3 {
     text-align: center;
     font-weight: 300;
-    color: #ffffff;
+    color: #333333;
     font-size: 20px;
     padding: 30px 0 50px 0;
 }
 
+$breakpoint-mobile: 900px;
+
+@media (max-width: $breakpoint-mobile) {
+    .pfPhoto h3 {
+        padding: 30px 30px 50px 30px;
+    }
+}
+
 .select-cat button {
     font-weight: 300;
-    color: #ffffff;
+    color: #333333;
     outline: 0;
     border: 0;
     background-color: #fdae10;

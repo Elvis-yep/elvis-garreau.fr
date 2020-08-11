@@ -60,11 +60,36 @@ header {
 }
 
 $breakpoint-1: 1170px;
- @media (max-width: $breakpoint-1) {
-     .hello, .hello2 {
+$breakpoint-mobile: 900px;
+
+@media (max-width: $breakpoint-mobile) {
+    header {
+        height: 400px;
+        width: 100%;
+        background-size: auto 100%;
+    }
+    .hello {
+        font-size: 25px;
         right: 30px;
-     }
- }
+        top: 120px;
+        width: 200px;
+        span {
+        font-size: 35px;
+        line-height: 70px;
+        }
+    }
+    .hello2 {
+        width: 200px;
+        font-size: 20px;
+        top: 150px
+    }
+}
+
+@media (max-width: $breakpoint-1) {
+    .hello, .hello2 {
+       right: 30px;
+    }
+}
 
 
 </style>

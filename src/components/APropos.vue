@@ -61,7 +61,7 @@ export default {
 }
 
 $breakpoint-tablet: 1280px;
-$breakpoint-mobile: 800px;
+$breakpoint-mobile: 900px;
 
 
 @media (max-width: $breakpoint-tablet) {
@@ -102,6 +102,9 @@ $breakpoint-mobile: 800px;
     background-repeat: no-repeat;
     background-size: auto 80%;
     background-position: bottom 0 right 5%;
+    }
+    .col1 h2 {
+        text-align: center;
     }
 }
 

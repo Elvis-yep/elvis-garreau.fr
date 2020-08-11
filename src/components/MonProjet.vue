@@ -39,25 +39,6 @@ export default {
     background-position: bottom 0 right 10%;
 }
 
-$breakpoint-1: 1170px;
-
-@media (max-width: $breakpoint-1) {
-    .back-mon-projet {
-        background-position: bottom 0 right 30px;
-    }
-
-    .col1-mon-projet {
-        padding-left: 30px;
-    }
-
-    .col2-mon-projet {
-        flex: 30%;
-    }
-
-    .mon-projet h2 {
-        padding-left: 30px;
-    }
-}
 
 .mon-projet p {
     font-weight: 300;
@@ -87,4 +68,44 @@ $breakpoint-1: 1170px;
     order: 2;
 }
 
+$breakpoint-1: 1170px;
+$breakpoint-mobile: 900px;
+
+@media (max-width: $breakpoint-1) {
+    .back-mon-projet {
+        background-position: bottom 0 right 30px;
+    }
+
+    .col1-mon-projet {
+        padding-left: 30px;
+    }
+
+    .col2-mon-projet {
+        flex: 30%;
+    }
+
+    .mon-projet h2 {
+        padding-left: 30px;
+    }
+}
+
+@media (max-width: $breakpoint-mobile) {
+    .back-mon-projet {
+        background-image: none;
+    }
+
+    .col1-mon-projet {
+        flex: 100%;
+        padding: 0 30px;
+    }
+
+    .col2-mon-projet {
+        flex: 0%;
+    }
+
+    .mon-projet h2 {
+        text-align: center;
+        padding-left: 0;
+    }
+}
 </style>

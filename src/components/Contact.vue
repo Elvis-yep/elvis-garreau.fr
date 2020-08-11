@@ -82,6 +82,7 @@ export default {
 }
 
 $breakpoint-1: 1170px;
+$breakpoint-mobile: 900px;
 
 @media (max-width: $breakpoint-1) {
     .back-contact{        
@@ -94,6 +95,24 @@ $breakpoint-1: 1170px;
 
     .col2-contact {
         padding-right: 30px;
+    }
+}
+
+@media (max-width: $breakpoint-mobile) {
+    .back-contact{        
+        background-image: none;
+    }
+
+    .col1-contact {
+        flex: 0%;
+    }
+
+    .col2-contact {
+        flex: 100%;
+        padding: 0 30px;
+    }
+    .contact h2 {
+        text-align: center;
     }
 }
 
