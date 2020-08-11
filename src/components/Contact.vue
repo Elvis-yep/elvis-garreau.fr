@@ -24,7 +24,8 @@
                         </label>
                         <label for="message">
                             <textarea type="text" placeholder="Ecrivez votre message" name="message" id="message" rows="5" cols="50" required></textarea>
-                        </label>
+                        </label>                        
+                        <input type="hidden" id="recaptcha-token" name="token" />
                         <button class="sendButton">Envoyer</button>
                     </form>
                     </vue-recaptcha>
