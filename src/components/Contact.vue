@@ -5,7 +5,7 @@
             </div>
             <div class="col2-contact">
                 <h2>Rencontrons<span class="about">Nous</span></h2>
-                <p>Mon profile vous interesse ?<br>
+                <p>Mon profil vous intéresse ?<br>
                 N'hésitez pas à me contacter via ce formulaire.<br>
                 Vous pouvez aussi me contacter par téléphone au : <span>07 56 80 24 75</span><br>
                 Ou via cette adresse mail : <span><a href="mailto: alternance@elvis-garreau.fr">alternance@elvis-garreau.fr</a></span>

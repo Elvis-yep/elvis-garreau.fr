@@ -1,6 +1,6 @@
 <template>
     <div class="pfPhoto container">
-    <h3>Voici une selection de différents type de photographie que je réalise</h3>
+    <h3>Voici une selection de différents types de photographies que je réalise</h3>
     <div class="select-cat">
         <button @click="changeCategorie('corporate')">Corporate</button>
         <button @click="changeCategorie('event')">Event</button>
